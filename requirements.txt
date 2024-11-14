@@ -1,0 +1,9 @@
+click
+cryptography==3.0.0
+Flask
+geoip2
+jsonschema
+PyJWT
+pyotp
+qrcode
+requests==2.0.0
