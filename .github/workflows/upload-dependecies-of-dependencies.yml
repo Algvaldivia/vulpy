@@ -1,0 +1,16 @@
+name: "upload-dependecies-of-dependencies"
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches: ["main"]
+jobs:
+  depSummision:
+    name: Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out 
+        uses: actions/checkout@v3
+      - uses: advanced-security/maven-dependency-submission-action@v3
